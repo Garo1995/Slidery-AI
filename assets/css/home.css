@@ -198,6 +198,13 @@ p{
 .unlock-settings-photo{
     position: absolute;
     padding: 0 20px;
+    left: 0;
+    width: 100%;
+}
+.unlock-settings-photo img{
+    height: 390px;
+    border-radius: 16px;
+    object-fit: cover;
 }
 .unlock-settings-mod{
     backdrop-filter: blur(30px);
@@ -206,6 +213,9 @@ p{
     border-radius: 12px;
     padding: 40px;
     background: #262728;
+}
+.unlock-settings-mod img{
+    width: 64px;
 }
 .unlock-settings-mod h3{
     margin-top: 30px;
@@ -223,6 +233,7 @@ p{
 }
 .presentations-main{
     padding-bottom: 80px;
+    padding-top: 80px;
 }
 .presentations-cnt{
     margin-top: 12px;
@@ -619,15 +630,13 @@ footer{
         padding: 8px 20px;
     }
 
-    .unlock-settings {
-        padding: 20px 0;
-    }
     .presentations-text {
         margin: -260px auto 0;
     }
     .our-users-stats {
         max-width: 340px;
     }
+
 }
 
 @media (max-width: 991px){
@@ -807,6 +816,9 @@ footer{
     }
     .share-browsers-main {
         margin-top: 80px;
+    }
+    .presentations-main {
+        padding-top: 0;
     }
     h3 {
         font-size: 18px;

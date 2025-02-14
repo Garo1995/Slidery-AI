@@ -76,9 +76,9 @@ let usersSwiper = new Swiper(".users-slider", {
     slidesPerView: 3,
     spaceBetween: 30,
     mousewheel: true,
-    speed: 1000,
+    speed: 1200,
     autoplay: {
-        delay: 2000,
+        delay: 1500,
         disableOnInteraction: false,
     },
 
@@ -118,16 +118,6 @@ let usersSwiper = new Swiper(".users-slider", {
         el: ".our-users-pagination",
         clickable: true,
     },
-    on: {
-        init() {
-            this.el.addEventListener('mouseenter', () => {
-                this.autoplay.stop();
-            });
 
-            this.el.addEventListener('mouseleave', () => {
-                this.autoplay.start();
-            });
-        }
-    },
 });
 
